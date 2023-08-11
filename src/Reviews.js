@@ -2,7 +2,7 @@ import React, { useState } from 'react'
 
 const Reviews = (props) => {
     const [state , setState] = useState(0)
-    const {id, name, job, image, text} =props.info[state]
+    const { name, job, image, text} =props.info[state]
 
     const NextData = ()=>{
         if(state === props.info.length - 1){
